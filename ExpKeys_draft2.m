@@ -2,7 +2,7 @@ ExpKey.version = 1.0;
 
 ExpKeys.notes = 'CSC28, CSC29 are reference, not CA1. Only CSC17, CSC18 are DG. CSC19, CSC20 are open.'
 
-ExpKeys.experimenter = 'EC; MY'
+ExpKeys.experimenter = {'EC; MY'}
 ExpKeys.species = 'Rat'
 ExpKeys.Rat_id = '';
 
