@@ -25,6 +25,16 @@ cfg_vstr.fc = {'R020-2012-12-17-CSC02d.ncs'};
 csc_vstr = LoadCSC(cfg_vstr); %loading vstr's csc data for that particular channel
 
 %% restricting data of hc and vstr
+
+dataBlocks = iv();
+dataBlocks.tstart = [ExpKeys.TimeOnTrack(1) ExpKeys.TimeOnTrack(2)];
+dataBlocks.tend = [ExpKeys.TimeOffTrack(1) ExpKeys.TimeOffTrack(2)];
+
+nBlocks = length(dataBlocks.tstart);
+for iBlock = 1:nBlocks
+    restrictedData{1} = restrict(csc_hc,dataBlocks.tstart(iBlock), dataBlocks. tend(iBlock));
+end
+
 restricted_hc_1 = restrict(csc_hc,ExpKeys.TimeOnTrack(1),ExpKeys.TimeOffTrack(1)); %restricting hc csc data to the time on the track 
 restricted_hc_2 = restrict(csc_hc,ExpKeys.TimeOnTrack(2),ExpKeys.TimeOffTrack(2));
 
