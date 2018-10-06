@@ -18,7 +18,7 @@ ExpKeys.taskBlocks = {'pot'; 'track'}
 
 ExpKeys.vSub_goodGamma = {'csc5.ncs'};
 ExpKeys.Amy_goodGamma = {''};
-ExpKeys.Piri_goodGamma = {''};
+ExpKeys.Piri_goodGamma = {''};  % make some comments and be like: it was meant to be here, but is actually in here. Lets just find the good channels. 
 ExpKeys.vHC_goodGamma = {''};
 ExpKeys.NAc_goodGamma = {''};
 ExpKeys.PL_goodGamma = {''};
