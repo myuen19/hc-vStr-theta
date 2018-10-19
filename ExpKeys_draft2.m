@@ -13,7 +13,7 @@ ExpKeys.RatWeight = '';
 ExpKeys.Exp_Day = '';
 ExpKeys.Order = {'pre',  'contra', 'ipsi', 'post'};
 
-ExpKeys.task = [15465, 16084; 16125, 16905];
+ExpKeys.task = [1546, 16084; 16125, 16905];  % not sure if this is the correct time points
 ExpKeys.taskBlocks = {'pot'; 'track'}
 
 ExpKeys.vSub_goodGamma = {'csc5.ncs'};
@@ -47,7 +47,7 @@ ExpKeys.Behavior = 'V_maze';
 ExpKeys.targets = {'vSub','Amy','Piri','vHC','NAc','PL', 'dHC-REF', 'dHC-CA1', 'dHC-DG', 'Open'}; %since we have the staggered Ref/CA1/DG those should be treated as their own sites, so I would add Ref and DG. 
 ExpKeys.TetrodeTargets = [1 2 3 4 5 6 7 8 9, 10];
 ExpKeys.TetrodeDepths = [];
-ExpKeys.CSC = {'CSC011.ncs', 'CSC02.ncs','CSC03.ncs','CSC04.ncs','CSC05.ncs','CSC06.ncs', 'CSC07.ncs', 'CSC08.ncs', 'CSC09.ncs', 'CSC10.ncs'};
+ExpKeys.CSC = {'CSC01.ncs', 'CSC02.ncs','CSC03.ncs','CSC04.ncs','CSC05.ncs','CSC06.ncs', 'CSC07.ncs', 'CSC08.ncs', 'CSC09.ncs', 'CSC10.ncs'};
 
 
 ExpKeys.Depths = [];
